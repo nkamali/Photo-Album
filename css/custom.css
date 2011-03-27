@@ -1,0 +1,88 @@
+#header {
+	background:#333 url('../images/header-background.png') repeat-x left top;
+	height:56px;
+	min-height:56px;
+	float:left;
+	overflow:hidden;
+}
+
+#header h1 {	
+	color: #fff;
+	font: 2.5em Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif;
+	text-align: center;
+	height: 53px;
+	line-height: 53px;
+}
+
+img#previous-button {
+	float:left;
+	margin: 13px 0 14px 14px;
+}
+
+img#next-button {
+	float:right;
+	margin: 13px 14px 14px 0;
+}
+
+#current_image_section {
+	background:#666 url('../images/current-photo-background.png') repeat-x left top;
+	height: 550px;
+	overflow:hidden;
+	font-face:Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#current_image_section img {
+	display:block;
+	padding:6px;
+	border:1px solid #999;
+	background-color:#fff;
+	margin:25px auto 10px auto;
+	text-align:center;
+	height:430px;
+}
+
+#current_image_section h2 {	
+	color: #363636;
+	font-size:2em;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 3px;
+	overflow:hidden;
+}
+
+#current_image_section h3 {	
+	color: #585858;
+	font-size:1.3em;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	overflow:hidden;
+}
+
+#thumbnail_section {
+	background:#fff url('../images/thumbnail-panel-background.png') repeat-x left top;
+	height:125px;
+	overflow:hidden;
+}
+
+#thumbnail_section img {
+	padding:3px;
+	background-color:#fff;
+	height:70px;
+}
+
+#thumbnail_section img.selected {
+	background-color:#85e2f4;
+}
+
+#thumbnail_section ul {
+	list-style-type:none;
+	text-align: center;
+	margin:25px auto;
+}
+
+#thumbnail_section li {
+	display:inline;
+	margin-right:15px;
+}

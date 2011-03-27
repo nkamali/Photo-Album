@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!--
+    Author: Navid Kamali
+    Date Created: March 26, 2011
+    Description: Photo Gallery CSS and JavaScript
+    Implementation Details:
+      The photos' thumbnails and large files are referenced in the gallery_json.txt file.
+      The JSON file is loaded once the page loads and the first photo is displayed and the first thumbnail is 
+      highlighted in blue.There are two ways to select a photo to view; click on the photo's thumbnail or click on
+      the Previous and Next arrow buttons. The thumbnail of the photo that is being displayed in the current photo
+      section will always be highlighted with a blue border. As a cool effect, the opacity settings of the
+      thumbnails change to 1.0 from default opacity 0.75 when you mouseover the thumbnails. The Previous and Next 
+      arrow buttons will allow you to wrap around the list of photos. (ie. if you are viewing the 1st photo, 
+      then clicking on the Previous button, the 6th photo will be displayed. If you are viewing the 6th photo and
+      you click on the Next button the 1st photo will be displayed).
+       
+    Technologies used: 
+      * CSS
+      * Blueprint CSS Framework
+      * JQuery
+      * JavaScript
+      * AJAX
+      * JQuery Opacity Rollover library
+      * HTML
+                
+    Requirements: You must host the entire contents of the Photo Gallery CSS and JavaScript on your own web server.
+                  For URLs below, I assume the your web server is started localhost at port 80, since an AJAX call          
+                  is made.
+                  
+                  This currently only has been tested with 6 thumbnails and their corresponding large photos.
+    -->
+    <head>
+      <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+      <meta http-equiv="content-language" content="en">
+      
+      <title>Navid Kamali's Photo Gallery CSS and Javascript</title>
+
+      <!-- Framework CSS -->
+    	<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection" />
+    	<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print" />
+      <!--[if IE]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+
+    	<!-- Import fancy-type plugin. -->
+    	<link rel="stylesheet" href="css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection" />
+
+    	<!-- Navid Kamali's Custom CSS -->
+    	<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen, projection" />
+    	
+    	<!-- JavaScript Libraries -->
+    	<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+      		      
+      <!-- Navid's JavaScript for retrieving the JSON data for the Photo Gallery -->
+      <script type="text/javascript" src="js/gallery.js"></script>      
+    </head>
+    <body>
+      <div class="container">
+            <div id="header" class="span-24 last">
+              <!-- Previous and Next Buttons are Taken out of normal flow with float left and float right --> 
+              
+              <img src="images/previous-button.png" alt="View Previous Photo" id="previous-button" />
+              <img src="images/next-button.png" alt="View Next Photo" id="next-button" />          
+              <h1>Summer at the Lake, 2008</h1>                
+            </div>
+            
+            <div id="current_image_section" class="span-24 last">
+              <img src="test_images/image1.jpg" alt="Julie sitting on the grass" />
+              <h2>Julie sitting on the grass</h2>
+              <h3>Taken on December 15th, 2005 in Los Angeles, California</h3>
+            </div>
+            <div id="thumbnail_section" class="span-24 last">
+            </div>  
+        </div>
+    
+    </body>
+  </html>    
