@@ -1,15 +1,3 @@
-Navid Kamali's Photo Gallery CSS and Javascript:
-
-1. All photo data for the gallery come from the JSON object
-2. The JSON data comes from an Ajax call made to the file "gallery_json.txt"
-3. Once the json has been loaded the first photo and all thumbnails appear
-4. The Album name is displayed at the top
-5. clicking on the thumbnail photos will display the corresponding larger photo
-6. when a thumbnail is selected it should be highlighted
-7. when a photo is displayed the title, date and location must appear below it
-8. clicking on the arrows will got to the next or previous photo
-9. The photo gallery looks similar to the mockup
-
     Author: Navid Kamali
     Date Created: March 26, 2011
     Description: Photo Gallery CSS and JavaScript
